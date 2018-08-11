@@ -43,7 +43,7 @@ td {
 }
 
 input[type=number] {
-    width: 6em;
+    width: 3em;
     font-size: 20px;
     border-radius: 15px;
     border-color: #011535
@@ -66,14 +66,15 @@ input[type=number] {
     border: 1px solid #fff;
     padding: 8px;
     margin-bottom: 10px;
+
 }
 .fa:hover {
     background-color: #011535;
     color: #fff;
 }
-ul{
+ul li{
     list-style: none;
-}
-li {
     display: inline;
+
 }
+

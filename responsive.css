@@ -7,7 +7,11 @@
 	}
 }
 @media screen and (max-width: 550px){
+	input[type=number] {
+		width: 1.5em;
+}
+@media screen and (max-width: 360){
 	#sizePicker {
-		font-size: 15px;
+		width: 70%;
 	}
 }
