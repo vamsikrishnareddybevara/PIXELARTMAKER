@@ -1,6 +1,6 @@
 html {
     width: 100vw;
-    height:auto;
+    height:100vh;
     font-family: 'BioRhyme', serif;
     color: #fff;
     background-image: linear-gradient(to right top, #bc0d0d, #a60047, #761f63, #3d2e61, #182c46);
@@ -45,6 +45,7 @@ td {
 input[type=number] {
     width: 3em;
     font-size: 20px;
+    padding-left: 5px;
     border-radius: 15px;
     border-color: #011535
 }

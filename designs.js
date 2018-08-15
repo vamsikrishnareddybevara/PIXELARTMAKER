@@ -12,6 +12,7 @@ function readValues(event){
 		clearCanvas();
 		height=document.getElementById('inputHeight').value;
 		width=document.getElementById('inputWidth').value;
+		document.querySelector('html').style.height='auto';
 		makeGrid(height,width);
 };
 function clearCanvas(){
@@ -39,10 +40,9 @@ function painting(){
 	function colorFilling(event) {
 		colorValue = document.querySelector('#colorPicker').value;
 		console.log(colorValue);
-			target1=event.target;
 			if(event.target.nodeName === 'TD'){
-				if(target1.hasAttribute("style") === false){
-				target1.style.cssText="background-color:"+colorValue;		
+				if(event.target.hasAttribute("style") === false){
+				event.target.style.cssText="background-color:"+colorValue;		
 				}
 			}
 	}
@@ -53,9 +53,8 @@ function erasing(){
 	pixelCanvas.addEventListener('mouseover',colorRemoving);
 	function colorRemoving(){
 		if(event.target.nodeName === 'TD'){
-			target2=event.target;
-			if(target2.hasAttribute("style")){
-				target2.removeAttribute("style");
+			if(event.target.hasAttribute("style")){
+				event.target.removeAttribute("style");
 			}
 		}
 	}
